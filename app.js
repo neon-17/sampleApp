@@ -1,20 +1,10 @@
-var http = require("http");
-var url = require("url");
+var express = require('express');
+var app = express();
+var port = process.env.PORTVAL || 8081;
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
 
-http.createServer(function(request, response){
-    response.writeHead(200, {"Content-Type":"text/plain"});
-    var params = url.parse(request.url,true).query;
-
-    console.log(params);
-
-    var a = params.number1;
-    var b = params.number2;
-
-    var numA = new Number(a);
-    var numB = new Number(b);
-
-    var sum = new Number(numA + numB).toFixed(0);
-
-    response.write(sum);
-    response.end();
-}).listen(3000);
+app.listen(port, function () {
+  console.log('Example app listening on port 3000!');
+});
