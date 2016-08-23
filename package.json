@@ -1,5 +1,5 @@
 {
-  "name": "My-Sample-App",
+  "name": "sample-app",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -7,5 +7,18 @@
   },
   "scripts": {
     "start": "node app.js"
-  }
+  },
+  "description": "sample deployment on heroku ",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neon-17/sampleApp.git"
+  },
+  "author": "dharmesh rathore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neon-17/sampleApp/issues"
+  },
+  "homepage": "https://github.com/neon-17/sampleApp#readme"
 }
