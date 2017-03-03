@@ -1,0 +1,13 @@
+branch-defaults:
+  master:
+    environment: null
+    group_suffix: null
+global:
+  application_name: sampleApp
+  branch: null
+  default_ec2_keyname: null
+  default_platform: Node.js
+  default_region: ap-south-1
+  profile: eb-cli
+  repository: null
+  sc: git
